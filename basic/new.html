@@ -1,0 +1,602 @@
+create a basic page by using html.............
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css ">
+    <title>Nav Bar</title>
+
+    <style>
+        .start-text h2{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+            font-weight: 400;
+            text-align : center;
+
+            background-color: rgb(0, 149, 255);
+            color: white;
+           margin-top: 0px;
+           margin-bottom: 0px;
+        }
+        li{
+            display: inline;
+            margin-top: 0px;
+            background: linear-gradient(to right, orange, rgb(244, 244, 20));  
+           color: white;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 10px;
+          padding-right: 10px;
+          border-radius: 10px;
+         margin-right: 35px;
+
+
+        }
+        .menu{
+            text-align: center;
+        }
+        .sign-in{
+            margin-top: -60px;
+            margin-left: 91%;
+        }
+        .sign-in a{
+            text-align: center;
+            display: inline;
+            text-decoration: none;
+
+            font-size: 20px;
+
+            padding: 15px;
+
+            border-radius: 20px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background: pink
+        }
+        .block1-img{
+            margin-top: 50px;
+            width: 700px;
+            height: 600px;
+          display: block;
+        }
+        .block1 h1 {
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             font-weight: lighter;
+                 position: absolute;
+                 width: 40%;
+                 margin-left: 60%;
+                 margin-top: -32%;
+
+                 font-size: 70px;
+                 background: linear-gradient( to right, #c95609, #6e416e, #352b70);
+                 background-clip: border-box;
+                 -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+        }
+        .why {
+            background-color: rgba(255, 166, 0, 0.499);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding-top: 20px;
+                padding-bottom: 50px;
+
+        }
+        .why h1 {
+                font-weight: 500;
+                margin-bottom: 60px;
+                margin-top: 40px;
+                text-align: center;
+        }
+        .why-image img{
+            width: 600px;
+            display: inline;
+        }
+        .case1{
+            display: inline;
+            position: absolute;
+            margin-top: -40%;
+            margin-left: 50%;
+            width: 30%;
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+            background-color: #ee5522;
+            background-size: cover;
+            color: white;
+        }
+        .case2{
+            display: inline;
+            position: absolute;
+            margin-top: -30%;
+            margin-left: 50%;
+            width: 30%;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+            background-color: #ee5522;
+            background-size: cover;
+            color: white;
+        }
+        .case3
+        {
+            display: inline;
+            position: absolute;
+            margin-top: -20%;
+            margin-left: 50%;
+            width: 30%;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+            background-color: #ee5522;
+            background-size: cover;
+            color: white;
+        }
+        .case4{
+            display: inline;
+            position: absolute;
+            margin-top: -8%;
+            margin-left: 50%;
+            width: 30%;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+            background-color: #ee5522;
+            background-size: cover;
+            color: white;
+
+        }
+
+        .topic{
+            display: flex;
+            margin-top: 20px;
+            padding: 30px;
+            background: #1A2980;  
+            background: -webkit-linear-gradient(to right, #26D0CE, #1A2980); 
+            background: linear-gradient(to right, #26D0CE, #1A2980);
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .topic-descript img{
+            display: inline;
+            width: 700px;
+            height: 500px;
+            padding-left: 0px;
+            margin-top: -62%;
+
+        }
+        .topic-descript{
+            text-align: center;
+            width: 700px;
+            background-color: antiquewhite;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            margin: 50px;
+        }
+        #why1{
+            width: 15%;
+        height: 80%;
+        margin-top: 2%;
+        margin-left: 60%;
+        }
+        .css-inner{
+            display: flex;
+            margin-top: 20px;
+            padding: 30px;
+            background: #AA076B; 
+            background: -webkit-linear-gradient(to right, #61045F, #AA076B);  
+            background: linear-gradient(to right, #61045F, #AA076B);  
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .css-describ img{
+            margin-top: 0px;
+            width: 700px;
+            height: 600px;
+          display: block;
+        }
+        .css-describ p {
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             font-weight: lighter;
+                 position: absolute;
+                 width: 40%;
+                 margin-left: 50%;
+                 margin-top: -32%;
+                 font-size: 30px;
+                 background: linear-gradient( to right, #c95609, #6e416e, #352b70);
+                 background-clip: border-box;
+                 -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+        }
+        .gittopic{
+            display: flex;
+            margin-top: 20px;
+            padding: 30px;
+            background: #536976;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .git-descript img{
+            display: inline;
+            width: 700px;
+            height: 500px;
+            padding-left: 0px;
+            margin-top: -62%;
+
+        }
+        .git-descript{
+            text-align: center;
+            width: 700px;
+            background-color: rgb(250, 249, 215);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            margin-left: 30%;
+        }
+        #why2{
+            width: 15%;
+        height: 80%;
+        margin-top: 2%;
+        margin-left: 15%;
+        }
+        .post-tools h1{
+           color: black;
+           font-weight: bold;
+           font-size: 60px;
+           text-align: center;
+           box-shadow: rgba(0, 1, 1, 0.514);
+           background-color: white;
+          border-color: rgb(6, 26, 39);
+          border-style: solid;
+          border-width: 3px;
+        }
+        .total{
+            display: inline;
+            margin-left: 7%;
+        }
+        .html-group,.css-group ,.git-group ,.github-group {
+            display: inline;
+
+        }
+        .html-group img,.css-group img,.git-group img,.github-group img{
+            width: 130px;
+            display: inline;
+            margin: 4.5%;
+            border: 0px solid;
+            border-radius: 50%;
+            padding: 20px;
+            box-shadow: rgba(133, 133, 136, 0.3) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+            background-color: white;
+
+        }
+        .first{
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            padding: 20px;
+        }
+        #main{
+            font-weight: bold;
+            font-size: 40px;
+        }
+        #des
+        {
+            font-size: 40px;
+        }
+        .first input{
+            border: 1px solid;
+            border-top-color: currentcolor;
+            border-right-color: currentcolor;
+            border-bottom-color: currentcolor;
+            border-left-color: currentcolor;
+            border-color: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            background-color: white;
+            width: 400px;
+            height: 40px;
+            font-size: 20px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+            padding: 10px;
+        }
+
+        .first button{
+                    width: 400px;
+        height: 40px;
+        font-size: 15px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 10px;
+        color: white;
+        background-color: black;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        margin-bottom: 5%;
+        }
+
+   </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="start">
+            <div class="start-text">
+                <h2>Start Building websites TODAY!</h2>
+             </div>
+         </div> 
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+            <div class="sign-in">
+                <a href="https://klefsac.netlify.app/">Join Us</a>
+            </div>
+        </div>
+     </div>
+     <div class="block1">
+        <div class="block1-img" >
+            <img src="man.gif" alt="" id="one">
+        </div>
+        <h1 id="head-one">Learn HTML and GIT to 
+            create webpages by colloborating with you Team members<h1>
+     </div>
+     <div class="why">
+        <h1>Why to Register for Hackathon Club?</h1>
+        <div class="why-image" >
+            <img src="why.png" alt="">
+        </div>
+        <div class="cases">
+            <div class="case1 case">
+                <h3>Programming Easy</h3>
+                <p>We focus on simplicity. Programming tutorials and examples written 
+                    in simple, understandable language for beginners.</p>
+            </div>
+            <div class="case2 case">
+                <h3>Learning HTML</h3>
+                <p>HTML is used to create websites.
+                    It gives Instructions to a computer.
+                </p>
+            </div>
+            <div class="case3 case">
+                <h3>Learning CSS</h3>
+                <p>It changes the appearance of HTML elements.
+                    By using CSS we can change color,text size,font size etc....
+                </p>
+            </div>
+            <div class="case4 case">
+                <h3>Learning Git</h3>
+                <p>It is a modern and widely open source used distributed version control system in the world.
+                </p>
+            </div>
+        </div>
+     </div>
+
+     <div class="html">
+        <div class="topic">
+        <marquee behavior="scroll" direction="left" scrollamount="20">HTML(HyperText Markup Language)</marquee>
+        </div>
+        <img id="why1" src="why1.png" alt="">
+        <div class="topic-descript">
+            <img src="html.gif" alt="">
+            <p><strong>HTML:</strong>
+                <u>HyperText Markup Language</u>. It i
+                s used to design web pages using a 
+                markup language. HTML is the combination 
+                of Hypertext and Markup language. 
+                Hypertext defines the link between web pages.
+                A markup language is used to define the text
+                document within the tag which defines the 
+                structure of web pages. This language is used to annotate 
+                (make notes for the computer) 
+                text so that a machine can understand it and manipulate text accordingly. 
+                Most markup languages (e.g. HTML) are human-readable. 
+                The language uses tags to define what manipulation has to be done on the text. 
+            </p>
+
+        </div>
+
+     </div>
+     <div class="css">
+        <div class="css-inner">
+            <marquee behavior="scroll" direction="right" scrollamount="20">CSS: Cascading Style Sheets</marquee>
+        </div>
+        <div class="css-describ">
+                <img src="css.gif" alt="">
+            <p>
+                <strong>CSS:</strong> stands for 
+                <u>Cascading Style Sheets</u>.CSS describes how HTML elements are to be displayed on screen, paper, or in other media.CSS saves a lot of work. It can control the layout of multiple web pages all at once.External stylesheets are stored in CSS files.
+            </p>
+        </div>
+     </div>
+
+     <div class="git">
+        <div class="gittopic">
+        <marquee behavior="scroll" direction="left" scrollamount="20">GIT</marquee>
+        </div>
+        <img id="why2" src="why2.png" alt="">
+        <div class="git-descript">
+            <img src="git.gif" alt="">
+            <p><strong>GIT:</strong>
+                is a  <u>version control system
+                </u>
+                used for tracking changes in computer files. 
+                It is generally used for source code management in software development.
+                Git is used to tracking changes in the source code. 
+                The distributed version control tool is used for source code management.
+                It allows multiple developers to work .
+            </p>
+
+        </div>
+
+
+     </div>
+
+     <div class="tools">
+
+        <div class="post-tools">
+
+            <h1>Tools we use</h1>
+
+            <div class="total">
+
+                <div class="html-group">
+
+                    <img src="html.png" alt="">
+
+                </div>
+
+                <div class="css-group">
+
+                    <img src="css.png" alt="">
+
+                </div>
+
+                <div class="git-group">
+
+                    <img src="git.png" alt="">
+
+                </div>
+
+                <div class="github-group">
+
+                    <img src="github.png" alt="">
+
+                </div>
+                <div class="mongo group">
+
+                    <img src="images/10.png" alt="">
+
+                </div>
+                <div class="react group">
+
+                    <img src="images/11.png" alt="">
+
+                </div>
+                <div class="git group">
+                    <img src="images/12.png" alt="">
+                </div>
+                <div class="git group">
+                    <img src="images/22.png" alt="">
+                </div>
+                <div class="git group">
+                    <img src="images/23.png" alt="">
+                </div>
+                <div class="git group">
+                    <img src="images/24.png" alt="">
+                </div>
+                <div class="git group">
+                    <img src="images/25.png" alt="">
+                </div>
+                <div class="git group">
+                    <img src="images/26.png" alt="">
+                </div>
+                <div class="git group">
+                    <img src="images/27.png" alt="">
+                </div>
+                <div class="git group">
+                    <img src="images/28.png" alt="">
+                </div>
+                <div class="git group">
+                    <img src="images/29.png" alt="">
+                </div>
+                <div class="git group">
+                    <img src="images/30.png" alt="">
+                </div>
+                <div class="git group">
+                    <img src="images/31.png" alt="">
+                </div>
+                <div class="git group">
+                    <img src="images/32.png" alt="">
+                </div>
+                <div class="git group">
+                    <img src="images/33.png" alt="">
+                </div>
+                <div class="git group">
+                    <img src="images/34.png" alt="">
+                </div>
+                <div class="git group">
+                    <img src="images/35.png" alt="">
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+     <div class="first">
+        <p id="des">Join Our News Letter for latet updates...</p>
+        <input type="email" name="email" id="email" placeholder="Email"> <br>
+        <button>Subscribe</button>
+     </div>
+     <footer class="footer">
+        <div class="box">
+            <div class="row">
+                <div class="footer-col"> 
+                    <h4>Front End Tools</h4>
+                    <ul>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">Java Script</a></li>
+                        <li><a href="">React</a></li>
+                        <li><a href="">JQuery</a></li>
+                        <li><a href="">Node.js</a></li>
+                        <li><a href="#">UX Designing</a></li>
+                        <li><a href="#">Animation</a></li>
+
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="footer-col"> 
+                    <h4>Back End Web Dev</h4>
+                    <ul>
+                        <li><a href="#">PHP</a></li>
+                        <li><a href="#">Django</a></li>
+                        <li><a href="#">SQL</a></li>
+                        <li><a href="#">Express js</a></li> 
+                        <li><a href="#">Mongodb</a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">React.js</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col"> 
+                    <h4>SAC</h4>
+                    <ul>
+                        <li><a href="#">Mentors</a></li>
+                        <li><a href="#">Clubs Presidents</a></li>
+                        <li><a href="#">Activities</a></li>
+                        <li><a href="#">Alumini</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Achievements</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col"> 
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+
+    </div>
+</body>
+</html>
